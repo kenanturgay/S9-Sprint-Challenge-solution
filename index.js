@@ -1,4 +1,4 @@
-const server = require('https://s9-sprint-challenge-solution-server.vercel.app/')
+const server = require('./backend/server')
 
 const PORT = process.env.PORT || 9000
 
