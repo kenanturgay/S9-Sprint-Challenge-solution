@@ -94,7 +94,7 @@ export default function AppFunctional(props) {
     console.log("submit");
 
     axios
-      .post("http://localhost:9000/api/result", {
+      .post("https://s9-sprint-challenge-solution-server.vercel.app/", {
         x: getXY()[0],
         y: getXY()[1],
         steps: steps,
