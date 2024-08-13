@@ -20,8 +20,8 @@ function catchAll(req, res, ctx) {
 }
 
 const handlers = [
-  rest.post('https://s9-sprint-challenge-solution-server.vercel.app/', result),
-  rest.all('https://s9-sprint-challenge-solution-server.vercel.app/*', catchAll),
+  rest.post('http://localhost:9000/api/result', result),
+  rest.all('http://localhost:9000/*', catchAll),
 ]
 
 module.exports = setupServer(...handlers)
